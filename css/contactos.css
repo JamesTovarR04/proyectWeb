@@ -1,0 +1,40 @@
+.infoContacto
+{
+	display: block;
+	margin: 10 px auto;
+	padding: 30px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.logo-cont
+{
+	display: block;
+    margin: 10px auto;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-cont img
+{
+    display: block;
+    margin: 10px auto;
+    opacity: .5;
+    height: 50px;
+}
+
+.logo-cont img:hover
+{
+    opacity: 1;
+}
+
+.infoContacto .icono
+{
+	color: #666;
+	margin: 10px;
+	font-size: 1.3em;
+	text-align: center;
+}
+.infoContacto .icono:hover
+{
+	color: #aaa;
+}

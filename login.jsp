@@ -22,8 +22,8 @@
       
       <div class="tab-content">
         <div id="signup">   
-          <h1 style="color:#ccc">Registrarse gratis</h1>
-          
+          <h3>Registrarse gratis</h3>
+          <br>
           <form action="procesar.jsp" method="post">
           
           <div class="top-row">
@@ -63,8 +63,8 @@
         </div>
         
         <div id="login">   
-          <h1 style="color:#ccc">Bienvenido de nuevo!</h1>
-          
+          <h3>Bienvenido de nuevo!</h3>
+          <br>
           <form action="/" method="post">
           
             <div class="field-wrap">
@@ -94,14 +94,6 @@
 	</div> <!-- /form -->
      
    	</section>
-   	<aside>
-   		<div class="widget">
-   			<div class="imagen"></div>
-   		</div>
-   		<div class="widget">
-   			<div class="imagen"></div>
-   		</div>
-   	</aside>
 	
 	<!-- Footer -->
    	<%@include file="componentes/footer.jsp" %>
