@@ -16,11 +16,6 @@
 	   	 	<!-- AQUI SE COLOCAN LOS <ARTICLES> (CONTENIDO PRINCIPAL) -->
 	     
 	   	</section>
-	   	<aside>
-	   	
-	   		<!-- (CONTENIDO SECUNDARIO) -->
-	   		
-	   	</aside>
 
 	   	<!-- Footer -->
 	   	<%@include file="componentes/footer.jsp" %>

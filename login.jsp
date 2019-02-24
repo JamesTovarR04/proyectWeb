@@ -4,6 +4,7 @@
 <html>
 <head>
 	<title>Login-FerreProductos</title>
+	<link rel="stylesheet" type="text/css" href="css/login.css">
 	<%@include file="componentes/header.jsp" %>
 </head>
 <body>
@@ -106,8 +107,7 @@
    	<%@include file="componentes/footer.jsp" %>
    </div>
    
-   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-   <script  src="jsForm/index.js"></script>
+   <script  src="js/index.js"></script>
 </body>
 
 </html>
