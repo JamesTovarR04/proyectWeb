@@ -52,57 +52,83 @@
 	   	  </article>
 	   	  <!--------------------------------------------------------------------------------------- -->
 	   	  <div class="card text-center">
-			  <div class="card-header">
+			  <div class="card-header fondo1 h5">
 			    ¡ Productos Destacados !
 			  </div>
 			  <div class="card-body">
-			    <div class="card" style="width: 18rem;">
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
+				  <div class="card-deck cont-productos">
+					  <div class="card max-w-p mb-3">
+					    <img src="img/martillo2.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h4 class="text-left h5">Nombre del producto</h4>
+						    <div class="card-text text-left">
+						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
+						    	<p class="text-primary mb-2">¡15% de descuento!</p>
+						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
+						    	<p class="text-secondary h3">$9500</p>
+						    </div>
+						    <a href="#" class="btn btn-primary"> Ver producto</a>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">fecha publicación: 00/00/000</small>
+					    </div>
+					  </div>
+					  <div class="card max-w-p mb-3">
+					    <img src="img/martillo2.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h4 class="text-left h5">Nombre del producto</h4>
+						    <div class="card-text text-left">
+						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
+						    	<p class="text-primary mb-2">¡15% de descuento!</p>
+						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
+						    	<p class="text-secondary h3">$9500</p>
+						    </div>
+						    <a href="#" class="btn btn-primary"> Ver producto</a>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">fecha publicación: 00/00/000</small>
+					    </div>
+					  </div>
+					  <div class="card max-w-p mb-3">
+					    <img src="img/martillo2.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h4 class="text-left h5">Nombre del producto</h4>
+						    <div class="card-text text-left">
+						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
+						    	<p class="text-primary mb-2">¡15% de descuento!</p>
+						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
+						    	<p class="text-secondary h3">$9500</p>
+						    </div>
+						    <a href="#" class="btn btn-primary"> Ver producto</a>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">fecha publicación: 00/00/000</small>
+					    </div>
+					  </div>
+					  <div class="card max-w-p mb-3">
+					    <img src="img/martillo2.png" class="card-img-top" alt="...">
+						  <div class="card-body">
+						    <h4 class="text-left h5">Nombre del producto</h4>
+						    <div class="card-text text-left">
+						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
+						    	<p class="text-primary mb-2">¡15% de descuento!</p>
+						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
+						    	<p class="text-secondary h3">$9500</p>
+						    </div>
+						    <a href="#" class="btn btn-primary"> Ver producto</a>
+					    </div>
+					    <div class="card-footer">
+					      <small class="text-muted">fecha publicación: 00/00/000</small>
+					    </div>
+					  </div>
 				  </div>
-				</div>
-				<div class="card" style="width: 18rem;">
-				  <img src="..." class="card-img-top" alt="...">
-				  <div class="card-body">
-				    <h5 class="card-title">Card title</h5>
-				    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-				    <a href="#" class="btn btn-primary">Go somewhere</a>
-				  </div>
-				</div>
 			  </div>
 			  <div class="card-footer text-muted">
 			    2 days ago
 			  </div>
 		</div>
-	   	   <!--<div class="historia">
-	        <p>Taladro MTZ</p>
-	        <img src="img/taladro.png" class="pcOne" alt="computadora">
-	        <h1> EN RESUMEN </h1>
-	        <p class="descripcion_1">Este nuevo taladro percutor es la inveción perfecta para cad uno de tus trabajos de construcción.
-	        </p>
-	        <a href="historia.html"> Leer más </a>
-	      </div>
-	
-	      <div class="banner2">
-	        <p>Pulidora MTZ</p>
-	        <img src="img/pulidora.png" class="pcOne" alt="Taladro">
-	        <h1> RESUMEN </h1>
-	        <p class="descripcion_1">Pulidora de excelente calidad, possee disco resistentes de titanio.</p>
-	        <a href="hardware.html"> Leer más </a>
-	      </div>-->
 	     
 	   	</section>
-	   	<aside>
-	   		<div class="widget">
-	   			<div class="imagen"></div>
-	   		</div>
-	   		<div class="widget">
-	   			<div class="imagen"></div>
-	   		</div>
-	   	</aside>
 
    	<!-- Footer -->
    	<%@include file="componentes/footer.jsp" %>

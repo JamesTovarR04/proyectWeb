@@ -184,6 +184,22 @@ aside .widget {
 	color: #d5d5d5;
 }
 
+/*------------------------------------*/
+
+.fondo1{
+	background-color: #e67e22 !important;
+	color:#fff !important;
+}
+
+.cont-productos{
+	justify-content: center;
+}
+
+.max-w-p{
+	max-width: 300px;
+	min-width: 250px !important;
+}
+
 /*---------------------------------------------------------------------------------------------------*/
 
 #articleF
@@ -206,6 +222,10 @@ aside .widget {
 }
 
 @media screen and (max-width: 800px) {
+	.max-w-p{
+		max-width: 100%;
+	}
+	
 	.contenedor {
 		flex-direction:column;
 	}
@@ -230,6 +250,7 @@ aside .widget {
 	aside .widget {
 		flex-grow:1;
 	}
+	
 }
 
 @media screen and (max-width: 600px) {
@@ -237,4 +258,14 @@ aside .widget {
 	#pies {
 		justify-content:space-around;
 	}
+
+}
+
+@media screen and (max-width: 1100px) {
+
+	.producto{
+		flex-basis: 0 !important;
+		flex-grow: 1 !important;
+	}
+	
 }

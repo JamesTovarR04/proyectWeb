@@ -30,28 +30,28 @@
 	<table id="example" class="display" cellspacing="0" width="100%">
 		<thead>
 			<tr>
-				<th>C骴igo</th>
+				<th>C贸digo</th>
 				<th>Nombre</th>
 				<th>Precio</th>
 				<th>Descuento</th>
-				<th>Descripci髇</th>
+				<th>Descripci贸n</th>
 				<th>Imagen</th>
 			</tr>
 		</thead>
 		<tfoot>
 			<tr>
-				<th>C骴igo</th>
+				<th>C贸digo</th>
 				<th>Nombre</th>
 				<th>Precio</th>
 				<th>Descuento</th>
-				<th>Descripci髇</th>
+				<th>Descripci贸n</th>
 				<th>Imagen</th>
 			</tr>
 		</tfoot>
 	</table>
 
 
-	<div id="dialogo-mensaje" title="Gesti髇 de Productos"></div>
+	<div id="dialogo-mensaje" title="Gesti贸n de Productos"></div>
 	<div id="dialog-form" title="Forma Producto">
 
 
@@ -60,9 +60,12 @@
 		<form>
 			<fieldset>
 				<input type="hidden" name="accion" id="accion" value="" /> 
-				<input type="hidden" name="codigo" id="codigo" value="" /> 
+				<input type="hidden" name="codigo" id="codigo" value="" />
 				<label for="nombre">Nombre</label> 
 				<input type="text" name="nombre" id="nombre" value="" class="text ui-widget-content ui-corner-all"/>
+
+				<label for="nombre">Serie</label> 
+				<input type="text" name="serie" id="serie" value="" class="text ui-widget-content ui-corner-all"/>
 
 				<label for="precio">Precio</label> 
 				<input type="text" name="precio" id="precio" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
@@ -70,8 +73,11 @@
 				<label for="precio">Descuento</label> 
 				<input type="text" name="descuento" id="descuento" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
 
-				<label for="precio">Descripci髇</label> 
+				<label for="precio">Descripci贸n</label> 
 				<input type="text" name="descripcion" id="descripcion" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
+
+				<label for="precio">Proveedor</label> 
+				<input type="text" name="proveedor" id="proveedor" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
 
 				<label for="precio">Imagen(url)</label> 
 				<input type="text" name="imagen" id="imagen" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
@@ -81,6 +87,8 @@
 				<input type="submit" tabindex="-1" style="position: absolute; top: -1000px">
 			</fieldset>
 		</form>
+	<!-- Footer -->
+   	<%@include file="componentes/footer.jsp" %>
 	</div>
 </body>
 </html>
