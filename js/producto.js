@@ -5,13 +5,16 @@ $(function() {
 		"ajax" : "servicios/producto/listar",
 		"columns" : [ 
 		 			  { "data" : "codigo"}, 
-		              { "data" : "nombre"}, 
+		              { "data" : "nombre"},
+		              { "data" : "serie"},
 		              { "data" : "precio"},
 		              { "data" : "descuento"},
 		              { "data" : "descripcion"},
-		              { "data" : "imagen"} 
+		              { "data" : "proveedor"},
+		              { "data" : "imagen"}
 		            ]
 	});
+
 	$('#example tbody').on('click', 'tr', function() 
 	{
 		if ($(this).hasClass('selected')) 
@@ -28,27 +31,33 @@ $(function() {
 	function editar(accion) {
 		var codigo = "0";
 		var nombre = "";
+		var serie = "";
 		var precio = "";
 		var descuento = 1;
 		var descripcion = ""
-		var imagen = ""
+		var proveedor = "";
+		var imagen = "";
 		//---------------------------------------------------------------
 		if (accion != "Adicionar") 
 		{
 			codigo = table.row('.selected').data().codigo;
 			nombre = table.row('.selected').data().nombre;
+			serie = table.row('.selected').data().serie;
 			precio = table.row('.selected').data().precio;
 			descuento = table.row('.selected').data().descuento;
 			descripcion = table.row('.selected').data().descripcion;
+			proveedor = table.row('.selected').data().proveedor;
 			imagen = table.row('.selected').data().imagen;
 
 		}
 		document.getElementById("accion").value = accion;
 		document.getElementById("codigo").value = codigo;
 		document.getElementById("nombre").value = nombre;
+		document.getElementById("serie").value = serie;
 		document.getElementById("precio").value = precio;
 		document.getElementById("descuento").value = descuento;
 		document.getElementById("descripcion").value = descripcion;
+		document.getElementById("proveedor").value = proveedor;
 		document.getElementById("imagen").value = imagen;
 		dialog.dialog("open");
 	}
@@ -75,10 +84,13 @@ $(function() {
 	function adicionarProducto() 
 	{
 		// Collect input from html
+		var idProducto = document.getElementById("codigo").value;
 		var nombre = document.getElementById("nombre").value;
+		var serie = document.getElementById("serie").value;
 		var precio = document.getElementById("precio").value;
 		var descuento = document.getElementById("descuento").value;
 		var descripcion = document.getElementById("descripcion").value;
+		var proveedor = document.getElementById("proveedor").value;
 		var imagen = document.getElementById("imagen").value;
 
 
@@ -87,10 +99,13 @@ $(function() {
 		r.setMethod("POST");
 		r.setContentType("application/json");
 		r.setEntity({
+			idProducto : codigo,
 			nombre : nombre,
+			serie : serie,
 			precio : precio,
 			descuento : descuento,
 			descripcion : descripcion,
+			proveedor : proveedor,
 			imagen : imagen
 
 		});
@@ -102,11 +117,13 @@ $(function() {
 	function modificarProducto() 
 	{
 		// Collect input from html page
-		var codigo = document.getElementById("codigo").value;
+		var idProducto = document.getElementById("codigo").value;
 		var nombre = document.getElementById("nombre").value;
+		var serie = document.getElementById("serie").value;
 		var precio = document.getElementById("precio").value;
 		var descuento = document.getElementById("descuento").value;
 		var descripcion = document.getElementById("descripcion").value;
+		var proveedor = document.getElementById("proveedor").value;
 		var imagen = document.getElementById("imagen").value;
 
 		var r = new REST.Request();
@@ -114,10 +131,13 @@ $(function() {
 		r.setMethod("PUT");
 		r.setContentType("application/json");
 		r.setEntity({
+			idProducto : codigo,
 			nombre : nombre,
+			serie : serie,
 			precio : precio,
 			descuento : descuento,
 			descripcion : descripcion,
+			proveedor : proveedor,
 			imagen : imagen
 		});
 		r.execute(function(status, request, entity) {
@@ -128,9 +148,9 @@ $(function() {
 	function eliminarProducto() 
 	{
 		// Collect input from html page
-		var codigo = document.getElementById("codigo").value;
+		var idProducto = document.getElementById("codigo").value;
 		var r = new REST.Request();
-		r.setURI(REST.apiURL + "/producto/eliminar/" + codigo);
+		r.setURI(REST.apiURL + "/producto/eliminar/" + idProducto);
 		r.setMethod("DELETE");
 		r.execute(function(status, request, entity) 
 		{

@@ -5,6 +5,7 @@
 <head>
 	<title>FerreProductos</title>
 	<%@include file="componentes/header.jsp" %>
+	<script src="js/productosIndex.js" type="text/javascript"></script>
 </head>
 <body>
    <div class="padre">
@@ -55,76 +56,8 @@
 			  <div class="card-header fondo1 h5">
 			    ¡ Productos Destacados !
 			  </div>
-			  <div class="card-body">
-				  <div class="card-deck cont-productos">
-					  <div class="card max-w-p mb-3">
-					    <img src="img/martillo2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h4 class="text-left h5">Nombre del producto</h4>
-						    <div class="card-text text-left">
-						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
-						    	<p class="text-primary mb-2">¡15% de descuento!</p>
-						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
-						    	<p class="text-secondary h3">$9500</p>
-						    </div>
-						    <a href="#" class="btn btn-primary"> Ver producto</a>
-					    </div>
-					    <div class="card-footer">
-					      <small class="text-muted">fecha publicación: 00/00/000</small>
-					    </div>
-					  </div>
-					  <div class="card max-w-p mb-3">
-					    <img src="img/martillo2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h4 class="text-left h5">Nombre del producto</h4>
-						    <div class="card-text text-left">
-						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
-						    	<p class="text-primary mb-2">¡15% de descuento!</p>
-						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
-						    	<p class="text-secondary h3">$9500</p>
-						    </div>
-						    <a href="#" class="btn btn-primary"> Ver producto</a>
-					    </div>
-					    <div class="card-footer">
-					      <small class="text-muted">fecha publicación: 00/00/000</small>
-					    </div>
-					  </div>
-					  <div class="card max-w-p mb-3">
-					    <img src="img/martillo2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h4 class="text-left h5">Nombre del producto</h4>
-						    <div class="card-text text-left">
-						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
-						    	<p class="text-primary mb-2">¡15% de descuento!</p>
-						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
-						    	<p class="text-secondary h3">$9500</p>
-						    </div>
-						    <a href="#" class="btn btn-primary"> Ver producto</a>
-					    </div>
-					    <div class="card-footer">
-					      <small class="text-muted">fecha publicación: 00/00/000</small>
-					    </div>
-					  </div>
-					  <div class="card max-w-p mb-3">
-					    <img src="img/martillo2.png" class="card-img-top" alt="...">
-						  <div class="card-body">
-						    <h4 class="text-left h5">Nombre del producto</h4>
-						    <div class="card-text text-left">
-						    	<p class="text-secondary mb-1">proveedor: Nombre</p>
-						    	<p class="text-primary mb-2">¡15% de descuento!</p>
-						    	<p class="text-secondary mb-0"><small>antes: <del>$10000</del></small></p>
-						    	<p class="text-secondary h3">$9500</p>
-						    </div>
-						    <a href="#" class="btn btn-primary"> Ver producto</a>
-					    </div>
-					    <div class="card-footer">
-					      <small class="text-muted">fecha publicación: 00/00/000</small>
-					    </div>
-					  </div>
-				  </div>
-			  </div>
-			  <div class="card-footer text-muted">
-			    2 days ago
+			  <div class="card-body" id="resultProductos">
+				  <!-- AQUI SE COLOCAN LOS PRODUCTOS -->
 			  </div>
 		</div>
 	     

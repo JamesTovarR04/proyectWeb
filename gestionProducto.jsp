@@ -1,27 +1,15 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
 "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-		<title>Gesti�n de Productos</title>
-		<!-- This will include the whole javascript file including ajax handling -->
-		<script lang="javascript" src="rest-api.js"></script>
-		<link rel="stylesheet"
-			href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
-		<script type="text/javascript"
-			src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-		<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
-		<script type="text/javascript"
-			src="https://cdn.datatables.net/1.10.11/js/jquery.dataTables.min.js"></script>
-		<link rel="stylesheet"
-			href="https://cdn.datatables.net/1.10.11/css/jquery.dataTables.min.css">
-		<link rel="stylesheet" href="css/estilo.css">
-		<script type="text/javascript" src="js/producto.js"></script>
+		<title>Gestión de Productos</title>
+		<%@include file="componentes/header.jsp" %>
+		<script src="js/producto.js" type="text/javascript"></script>
 	</head>
 <body>
-	<h1>GESTI�N DE PRODUCTOS</h1>
+	<h1>GESTIÓN DE PRODUCTOS</h1>
 	<div style="float: right;">
 		<input type="button" value="Adicionar" id="adicionar" /> 
 		<input type="button" value="Modificar" id="modificar" /> 
@@ -40,18 +28,20 @@
 		</thead>
 		<tfoot>
 			<tr>
-				<th>Código</th>
+				<th>CÃ³digo</th>
 				<th>Nombre</th>
 				<th>Precio</th>
 				<th>Descuento</th>
-				<th>Descripción</th>
+				<th>DescripciÃ³n</th>
 				<th>Imagen</th>
 			</tr>
 		</tfoot>
 	</table>
 
 
-	<div id="dialogo-mensaje" title="Gestión de Productos"></div>
+	<div id="dialogo-mensaje" title="GestiÃ³n de Productos">
+	
+	</div>
 	<div id="dialog-form" title="Forma Producto">
 
 
@@ -73,7 +63,7 @@
 				<label for="precio">Descuento</label> 
 				<input type="text" name="descuento" id="descuento" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
 
-				<label for="precio">Descripción</label> 
+				<label for="precio">DescripciÃ³n</label> 
 				<input type="text" name="descripcion" id="descripcion" value="jane@smith.com" class="text ui-widget-content ui-corner-all"/>
 
 				<label for="precio">Proveedor</label> 

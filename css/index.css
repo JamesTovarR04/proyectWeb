@@ -186,6 +186,11 @@ aside .widget {
 
 /*------------------------------------*/
 
+.imagen-producto{
+	max-height: 250px;
+	object-fit: cover;
+}
+
 .fondo1{
 	background-color: #e67e22 !important;
 	color:#fff !important;
